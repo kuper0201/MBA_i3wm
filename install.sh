@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -Syu pulseaudio
+
 # screen backlight
 sudo mv 99-backlight.rules /etc/udev/rules.d/99-backlight.rules
 
