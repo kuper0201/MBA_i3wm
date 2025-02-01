@@ -1,0 +1,11 @@
+[Unit]
+Description=Disable Turbo Boost on Intel CPUs
+After=getty.target
+
+[Service]
+Type=simple
+ExecStart=/opt/intel/intel_noturbo.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=getty.target
